@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="lev0.css">
+    <link rel="stylesheet" type="text/css" href="bg.css">
+
+
+    <!--<link rel="stylesheet" type="text/css" href="cursor.css"> -->
+   <!--<script type="text/javascript" src="cursor.js"></script> -->
+
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Orbitron" />
+    <script type="text/javascript" src="door.js"></script>
+    <!--<script type="text/javascript" src="cursor.js"></script> -->
+    <!--<script type="text/javascript" src="aura.js"></script> -->
+    <script src="https://s.codepen.io/assets/libs/prefixfree.min.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+
+    <link href="http://fonts.cdnfonts.com/css/vcr-osd-mono" rel="stylesheet">
+
+    <link href="//db.onlinewebfonts.com/c/4474be77c8de11165f325afd6393de32?family=Veteran+Typewriter" rel="stylesheet"
+        type="text/css" />
+    <style>
+        @import url('http://fonts.cdnfonts.com/css/vcr-osd-mono');
+        @import url(https://db.onlinewebfonts.com/c/e89a7a1cf81d839517548fafb6f6e012?family=Veteran+Typewriter);
+        @import url('https://fonts.googleapis.com/css?family=Monoton');
+        @import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+        @import url('https://fonts.googleapis.com/css?family=Mr+Dafoe');
+        @import url('https://fonts.googleapis.com/css?family=Changa+One');
+
+        @font-face {
+            font-family: "Veteran Typewriter";
+            src: url("https://db.onlinewebfonts.com/t/e89a7a1cf81d839517548fafb6f6e012.eot");
+            src: url("https://db.onlinewebfonts.com/t/e89a7a1cf81d839517548fafb6f6e012.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/e89a7a1cf81d839517548fafb6f6e012.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/e89a7a1cf81d839517548fafb6f6e012.woff") format("woff"), url("https://db.onlinewebfonts.com/t/e89a7a1cf81d839517548fafb6f6e012.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/e89a7a1cf81d839517548fafb6f6e012.svg#Veteran Typewriter") format("svg");
+        }
+    </style>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="bg.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start</title>
+    <link rel="icon" href="Screenshot_2021-07-18_at_10.28.00_PM_prev_ui.png" type="image/x-icon">
+</head>
+
+<body>
+    <!--<div class="leftborder">
+
+    </div>
+    <div class="rightborder">
+
+    </div> -->
+    <div class="wrapper">
+        
+        <div class="container">
+            
+            <!--<div id="div1" class="cursor"></div> -->
+            <div class="line"></div>
+            <div class="steps">
+                <div class="steplev0" id="0"></div>
+                <div class="step" id="1"></div>
+                <div class="step" id="2"></div>
+                <div class="step" id="3"></div>
+                <div class="step" id="4"></div>
+                <div class="step" id="5"></div>
+                <div class="step" id="6"></div>
+                <div class="step" id="7"></div>
+                <div class="step" id="8"></div>
+            </div>
+            <div class="lb">
+                <button type="button" class="btn btn-danger" data-toggle="tooltip" data-placement="bottom"
+                    title="Click to see the rulebook" style="float: left;">Rulebook</button>
+            </div>
+            <div class="rb">
+                <button type="button" class="btn btn-danger" data-toggle="tooltip" data-placement="bottom"
+                    title="Click to see the leaderboard" style="float: right;">Leaderboard</button>
+            </div>
+            <h6 style="text-align:center; "> <button type="button" class="btn btn-success"
+                    style="float:left; cursor: pointer;" onclick="window.history.back()" data-toggle="tooltip"
+                    data-placement="bottom" title="Go back to the previous level">⬅</button><button type="button"
+                    class="btn btn-success" style="float: right; cursor: pointer;" onclick="window.history.forward()"
+                    data-toggle="tooltip" data-placement="bottom" title="Go to the next level ">➡</button></h6>
+            <h5 class="glowww">START</h5>
+                <div class="tn">
+                    <h3>Team Name: ABCDEF</h3>
+                </div>
+                <div class="tp">
+                    <h3>Total Points: 100</h3>
+                </div>
+
+
+
+            <!--<div class="typewriter">
+            <div class="typewriter-text">Choose a door. Find your own way out.</div>
+        </div> -->
+
+            <!-- <div class="centered">
+            <div class="lb">
+                <button type="button" class="btn btn-danger" style="align-self: center;">Hint</button>
+            </div>
+            <div class="rb">
+                <button type="button" class="btn btn-danger" style="align-self: center;">Submit</button>
+            </div>
+        </div> -->
+            <!-- <p class="alert">click on the door and try to click on more than one door</p> -->
+            <!--<div class="door"> -->
+
+
+            <!--<div class="door">
+                <div class="perspective" id="d1" onclick="openDoor(this)">
+                    <div class="thumb">
+                    </div>
+                </div>
+            </div> -->
+
+
+            <!--</div> -->
+            <!--
+        <div class="perspective" id="d2" onclick="openDoor(this)">
+            <div class="thumb">
+            </div>
+        </div>
+        <div class="perspective" id="d3" onclick="openDoor(this)">
+            <div class="thumb">
+            </div>
+        </div>
+        <div class="perspective" id="d4" onclick="openDoor(this)">
+            <div class="thumb">
+            </div>
+        </div> -->
+            <!--
+        <div class="re">
+
+            <img src="discord img.png" height="160px" width="480px" style="margin-top: 0px; left: 50%;">
+
+        </div>
+        <div class="ans">
+            <form>
+                <input type="text" placeholder="Enter your answer here." id="answerbox">
+            </form>
+        </div> -->
+
+
+        </div>
+        <!--<div class="score"></div> -->
+        <div class="sun"></div>
+        <div class="grid"></div>
+        <div class="door">
+            <div class="perspective" id="d1" onclick="openDoor(this); document.location='firefly.html';"> 
+                <div class="thumb">
+                </div>
+            </div>
+        </div>
+        <!--<div class="car">
+          <div class="car__mirror car__mirror--left"></div>
+          <div class="car__mirror car__mirror--right"></div>
+          <div class="car__wheel car__wheel--left"></div>
+          <div class="car__wheel car__wheel--right"></div>
+          <div class="car__roof"></div>
+          <div class="car__bumper"></div>
+          <div class="car__back">
+            <div class="car__light car__light--left"></div>
+            <div class="car__light car__light--small car__light--left"></div>
+            <div class="car__light car__light--small car__light--right"></div>
+            <div class="car__light car__light--right"></div>
+            <div class="car__grill">
+              <div class="car__emblem"></div>
+            </div>
+          </div>
+           <div class="car__plate">
+             SYNTH
+           </div>
+          <div class="car__exhaust car__exhaust--left"></div>
+          <div class="car__exhaust car__exhaust--right"></div>
+        </div>  -->
+        <!--<div class="diamond"></div>
+        <div class="diamond"></div>
+        <div class="diamond"></div>
+        <div class="diamond"></div>
+        <div class="circle"></div>  -->
+    </div>
+    
+</body>
+
+</html>
